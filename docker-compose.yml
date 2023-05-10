@@ -1,0 +1,25 @@
+services:
+  php:
+    build:
+      dockerfile: ./Dockerfile
+      context: ./www
+    ports:
+      - 80:80
+    volumes:
+      - ./www:/var/www/html
+      - ./config/etc:/php_conf
+      - type: bind
+        source: ./config/php/php.ini
+        target: /usr/local/etc/php/php.ini
+    env_file:
+      - ./.env
+  mysql:
+    image: mysql:5.7.39
+    ports:
+      - 3306:3306
+    environment: 
+        MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - type: bind
+        source: ./db_init.sql
+        target: /docker-entrypoint-initdb.d/db_init.sql
