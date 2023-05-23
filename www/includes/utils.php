@@ -8,7 +8,7 @@
 		$conn = conectar();
 
 		if (!isset($session)) {
-		header("Location: iniciarsesion.php");
+		header("Location: login.php");
 		exit();
 		}
 
@@ -23,7 +23,7 @@
 		session_start();
 		$session = $_SESSION['usuario'];
 		if (!isset($session)) {
-			header("Location: iniciarsesion.php");
+			header("Location: login.php");
 			exit();
 		}
 	}

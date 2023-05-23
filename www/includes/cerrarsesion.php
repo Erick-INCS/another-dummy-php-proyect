@@ -1,1 +1,1 @@
-<?php session_start(); session_destroy(); Header("Location: ../vistas/iniciarsesion.php");?>
+<?php session_start(); session_destroy(); Header("Location: ../vistas/login.php");?>

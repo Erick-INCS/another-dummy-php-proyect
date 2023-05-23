@@ -57,7 +57,7 @@
       </div>
     </a>
 <?php if(!isset($_SESSION['usuario'])){ ?>
-    <a href="iniciarsesion.php" class="leftlogout leftmenulink w-inline-block">
+    <a href="login.php" class="leftlogout leftmenulink w-inline-block">
       <div class="w-row">
         <div class="w-col w-col-2"><div class="icontectleft">F</div></div>
         <div class="w-col w-col-8"><div class="leftlinktext">Iniciar sesion</div></div>

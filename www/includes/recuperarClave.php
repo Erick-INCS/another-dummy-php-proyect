@@ -18,7 +18,7 @@
   }
   else
   {
-    Header("Location: ../vistas/iniciarsesion.php?err=" . urldecode("El correo no se encuentra registrado."));
+    Header("Location: ../vistas/login.php?err=" . urldecode("El correo no se encuentra registrado."));
     exit();
   }
 
@@ -34,5 +34,5 @@
       $subject,
       $body
     );
-    Header("Location: ../vistas/iniciarsesion.php?msg=" . urldecode("Favor de revisar su correo para recuperar la clave."));
+    Header("Location: ../vistas/login.php?msg=" . urldecode("Favor de revisar su correo para recuperar la clave."));
 ?>

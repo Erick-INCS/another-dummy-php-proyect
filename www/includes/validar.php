@@ -28,7 +28,7 @@
   }
   else
   {
-      header("Location: ../vistas/iniciarsesion.php?err=" . urlencode("Error al ingresar: Intente de nuevo."));
+      header("Location: ../vistas/login.php?err=" . urlencode("Error al ingresar: Intente de nuevo."));
       exit();
   }
   mysqli_free_result($resultado);

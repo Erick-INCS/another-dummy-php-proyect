@@ -3,7 +3,7 @@
     session_start();
     $session = $_SESSION['usuario'];
     if (!isset($session)) {
-        header("Location: iniciarsesion.php");
+        header("Location: login.php");
         exit();
     }
     $is_admin = $_SESSION['admin'];
