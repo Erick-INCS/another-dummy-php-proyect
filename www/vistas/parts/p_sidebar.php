@@ -40,6 +40,14 @@
                                     <span class="hide-menu">Usuarios</span>
                                 </a>
                             </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="historial.php" aria-expanded="false">
+                                    <span>
+                                        <i class="ti ti-history"></i>
+                                    </span>
+                                    <span class="hide-menu">Historial</span>
+                                </a>
+                            </li>
                         <?php } ?>
                         <!-- <li class="nav-small-cap">
                             <i class="ti ti-dots nav-small-cap-icon fs-4"></i>

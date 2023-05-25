@@ -8,6 +8,6 @@
   $query=mysqli_query($con,$sql);
 
   if($query){
-      Header("Location: ../vistas/mostrarUsuarios.php");
+      Header("Location: ../vistas/usuarios.php");
   }
 ?>

@@ -17,7 +17,7 @@
     $sql = "SELECT 1 AS UNO FROM usuarios WHERE correo = '$correo'";
     $query = mysqli_fetch_array(mysqli_query($con, $sql));
     if (isset($query['UNO'])) {
-        Header("Location: ../vistas/mostrarUsuarios.php?err=" . urldecode("El correo ya se encuentra registrado para otro usuario."));
+        Header("Location: ../vistas/usuarios.php?err=" . urldecode("El correo ya se encuentra registrado para otro usuario."));
         exit();
     }
     echo var_dump(2);
@@ -39,6 +39,6 @@
 			$subject,
 			$body
 		);
-        Header("Location: ../vistas/mostrarUsuarios.php");
+        Header("Location: ../vistas/usuarios.php");
     }
 ?>
